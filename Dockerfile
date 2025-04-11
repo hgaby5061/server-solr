@@ -41,8 +41,8 @@ FROM $BASE_IMAGE
 #COPY /bin /opt/
 #COPY /modules /opt/
 #COPY /scripts /opt/
-COPY ./ /opt/
-RUN ls -l /opt/
+COPY / /opt
+RUN ls -l /opt
 
 ARG SOLR_VERSION="9.6.1"
 
