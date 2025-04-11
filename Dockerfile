@@ -105,6 +105,8 @@ WORKDIR /opt/solr
 RUN ls -l /opt/solr/
 RUN ls -l /opt/solr/docker/scripts
 
+RUN chmod +x /opt/solr/scripts/docker-entrypoint.sh
+
 USER $SOLR_UID
 
 ENTRYPOINT ["docker-entrypoint.sh"]
