@@ -103,7 +103,7 @@ RUN set -ex; \
 EXPOSE 8983
 WORKDIR /opt/solr
 RUN ls -l /opt/solr/
-RUN ls -l /opt/solr/scripts/
+RUN ls -l /opt/solr/docker/scripts
 
 USER $SOLR_UID
 
