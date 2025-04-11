@@ -100,7 +100,7 @@ RUN set -ex; \
 #VOLUME /var/solr
 EXPOSE 8983
 WORKDIR /opt/solr
-RUN ls -l ./docker-entrypoint.sh
+
 
 USER $SOLR_UID
 
