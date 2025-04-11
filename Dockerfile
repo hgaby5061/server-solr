@@ -105,10 +105,10 @@ WORKDIR /opt/solr
 RUN ls -l /opt/solr/
 RUN ls -l /opt/solr/docker/scripts
 
-USER $SOLR_UID
+
 RUN chmod +x /opt/solr/docker/scripts/*
 RUN chown -R "$SOLR_USER:$SOLR_GROUP" /var/solr
-
+USER $SOLR_UID
 
 ENTRYPOINT ["docker-entrypoint.sh"]
 CMD ["solr-foreground"]
