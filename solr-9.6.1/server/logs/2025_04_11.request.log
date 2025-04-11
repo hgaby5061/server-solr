@@ -1,0 +1,1 @@
+127.0.0.1 - - [11/abr./2025:18:50:51 +0000] "GET /solr/admin/info/system?wt=javabin&version=2 HTTP/2.0" 200 2457

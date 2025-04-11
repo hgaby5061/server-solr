@@ -1,0 +1,378 @@
+2025-04-11 16:34:52.715 INFO  (main) [c: s: r: x: t:] o.e.j.s.Server jetty-10.0.20; built: 2024-01-29T20:46:45.278Z; git: 3a745c71c23682146f262b99f4ddc4c1bc41630c; jvm 18.0.1+10-24
+2025-04-11 16:34:53.113 WARN  (main) [c: s: r: x: t:] o.e.j.u.DeprecationWarning Using @Deprecated Class org.eclipse.jetty.servlet.listener.ELContextCleaner
+2025-04-11 16:34:53.151 INFO  (main) [c: s: r: x: t:] o.a.s.s.CoreContainerProvider Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2025-04-11 16:34:53.159 INFO  (main) [c: s: r: x: t:] o.a.s.s.CoreContainerProvider  ___      _       Welcome to Apache Solr™ version 9.6.1
+2025-04-11 16:34:53.159 INFO  (main) [c: s: r: x: t:] o.a.s.s.CoreContainerProvider / __| ___| |_ _   Starting in standalone mode on port 8983
+2025-04-11 16:34:53.159 INFO  (main) [c: s: r: x: t:] o.a.s.s.CoreContainerProvider \__ \/ _ \ | '_|  Install dir: D:\GABY\solr-9.6.1
+2025-04-11 16:34:53.159 INFO  (main) [c: s: r: x: t:] o.a.s.s.CoreContainerProvider |___/\___/_|_|    Start time: 2025-04-11T16:34:53.159235300Z
+2025-04-11 16:34:53.162 INFO  (main) [c: s: r: x: t:] o.a.s.s.CoreContainerProvider Solr started with "-XX:+CrashOnOutOfMemoryError" that will crash on any OutOfMemoryError exception. The cause of the OOME will be logged in the crash file at the following path: D:\GABY\solr-9.6.1\server\logs\jvm_crash_9664.log
+2025-04-11 16:34:53.200 INFO  (main) [c: s: r: x: t:] o.a.s.s.CoreContainerProvider Solr Home: D:\GABY\solr-9.6.1\server\solr (source: system property: solr.solr.home)
+2025-04-11 16:34:53.216 INFO  (main) [c: s: r: x: t:] o.a.s.c.SolrXmlConfig Loading solr.xml from D:\GABY\solr-9.6.1\server\solr\solr.xml
+2025-04-11 16:34:53.259 INFO  (main) [c: s: r: x: t:] o.a.s.c.SolrResourceLoader Added 1 libs to classloader, from paths: [/D:/GABY/solr-9.6.1/lib]
+2025-04-11 16:34:54.118 INFO  (main) [c: s: r: x: t:] o.a.s.u.t.SimplePropagator Always-on trace id generation enabled.
+2025-04-11 16:34:54.522 WARN  (main) [c: s: r: x: t:] o.a.s.u.StartupLoggingUtils Jetty request logging enabled. Will retain logs for last 3 days. See chapter "Configuring Logging" in reference guide for how to configure.
+2025-04-11 16:34:54.522 WARN  (main) [c: s: r: x: t:] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
+2025-04-11 16:34:54.760 INFO  (main) [c: s: r: x: t:] o.a.s.c.CorePropertiesLocator Found 3 core definitions underneath D:\GABY\solr-9.6.1\server\solr
+2025-04-11 16:34:54.760 INFO  (main) [c: s: r: x: t:] o.a.s.c.CorePropertiesLocator Cores are: [discursos, modulo, Topics]
+2025-04-11 16:34:54.817 INFO  (coreLoadExecutor-11-thread-3) [c: s: r: x:Topics t:] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.11.1
+2025-04-11 16:34:54.817 INFO  (coreLoadExecutor-11-thread-1) [c: s: r: x:discursos t:] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.11.1
+2025-04-11 16:34:54.817 INFO  (coreLoadExecutor-11-thread-2) [c: s: r: x:modulo t:] o.a.s.c.SolrConfig Using Lucene MatchVersion: 9.10.0
+2025-04-11 16:34:54.882 WARN  (coreLoadExecutor-11-thread-3) [c: s: r: x:Topics t:] o.a.s.c.SolrConfig solrconfig.xml: <jmx> is no longer supported, use solr.xml:/metrics/reporter section instead
+2025-04-11 16:34:54.882 WARN  (coreLoadExecutor-11-thread-1) [c: s: r: x:discursos t:] o.a.s.c.SolrConfig solrconfig.xml: <jmx> is no longer supported, use solr.xml:/metrics/reporter section instead
+2025-04-11 16:34:54.956 INFO  (coreLoadExecutor-11-thread-1) [c: s: r: x:discursos t:] o.a.s.s.IndexSchema Schema name=default-config
+2025-04-11 16:34:54.956 INFO  (coreLoadExecutor-11-thread-2) [c: s: r: x:modulo t:] o.a.s.s.IndexSchema Schema name=default-config
+2025-04-11 16:34:54.959 INFO  (coreLoadExecutor-11-thread-3) [c: s: r: x:Topics t:] o.a.s.s.IndexSchema Schema name=default-config
+2025-04-11 16:34:55.200 WARN  (main) [c: s: r: x: t:] o.g.j.m.i.MessagingBinders A class jakarta.activation.DataSource for a default provider MessageBodyWriter<jakarta.activation.DataSource> was not found. The provider is not available.
+2025-04-11 16:34:55.359 INFO  (coreLoadExecutor-11-thread-3) [c: s: r: x:Topics t:] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2025-04-11 16:34:55.359 INFO  (coreLoadExecutor-11-thread-2) [c: s: r: x:modulo t:] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2025-04-11 16:34:55.359 INFO  (coreLoadExecutor-11-thread-2) [c: s: r: x:modulo t:] o.a.s.c.CoreContainer Creating SolrCore 'modulo' using configuration from instancedir D:\GABY\solr-9.6.1\server\solr\modulo, trusted=true
+2025-04-11 16:34:55.411 INFO  (coreLoadExecutor-11-thread-3) [c: s: r: x:Topics t:] o.a.s.c.CoreContainer Creating SolrCore 'Topics' using configuration from instancedir D:\GABY\solr-9.6.1\server\solr\Topics, trusted=true
+2025-04-11 16:34:55.444 INFO  (coreLoadExecutor-11-thread-2) [c: s: r: x:modulo t:] o.a.s.c.SolrCore Opening new SolrCore at [D:\GABY\solr-9.6.1\server\solr\modulo], dataDir=[D:\GABY\solr-9.6.1\server\solr\modulo\data\]
+2025-04-11 16:34:55.444 INFO  (coreLoadExecutor-11-thread-3) [c: s: r: x:Topics t:] o.a.s.c.SolrCore Opening new SolrCore at [D:\GABY\solr-9.6.1\server\solr\Topics], dataDir=[D:\GABY\solr-9.6.1\server\solr\Topics\data\]
+2025-04-11 16:34:55.779 INFO  (main) [c: s: r: x: t:] o.a.s.j.SolrRequestAuthorizer Creating a new SolrRequestAuthorizer
+2025-04-11 16:34:56.481 INFO  (coreLoadExecutor-11-thread-3) [c: s: r: x:Topics t:] o.a.s.j.SolrRequestAuthorizer Creating a new SolrRequestAuthorizer
+2025-04-11 16:34:56.481 INFO  (coreLoadExecutor-11-thread-2) [c: s: r: x:modulo t:] o.a.s.j.SolrRequestAuthorizer Creating a new SolrRequestAuthorizer
+2025-04-11 16:34:56.515 INFO  (coreLoadExecutor-11-thread-3) [c: s: r: x:Topics t:] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2025-04-11 16:34:56.515 INFO  (coreLoadExecutor-11-thread-2) [c: s: r: x:modulo t:] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2025-04-11 16:34:56.515 INFO  (coreLoadExecutor-11-thread-3) [c: s: r: x:Topics t:] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2025-04-11 16:34:56.515 INFO  (coreLoadExecutor-11-thread-2) [c: s: r: x:modulo t:] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2025-04-11 16:34:56.553 INFO  (coreLoadExecutor-11-thread-2) [c: s: r: x:modulo t:] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2025-04-11 16:34:56.553 INFO  (coreLoadExecutor-11-thread-3) [c: s: r: x:Topics t:] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2025-04-11 16:34:56.553 INFO  (coreLoadExecutor-11-thread-3) [c: s: r: x:Topics t:] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2025-04-11 16:34:56.553 INFO  (coreLoadExecutor-11-thread-2) [c: s: r: x:modulo t:] o.a.s.u.CommitTracker Soft AutoCommit: if uncommitted for 3000ms; 
+2025-04-11 16:34:56.750 INFO  (coreLoadExecutor-11-thread-1) [c: s: r: x:discursos t:] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2025-04-11 16:34:56.828 INFO  (coreLoadExecutor-11-thread-3) [c: s: r: x:Topics t:] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: D:\GABY\solr-9.6.1\server\solr\Topics\conf
+2025-04-11 16:34:56.828 INFO  (coreLoadExecutor-11-thread-2) [c: s: r: x:modulo t:] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: D:\GABY\solr-9.6.1\server\solr\modulo\conf
+2025-04-11 16:34:56.836 INFO  (main) [c: s: r: x: t:] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@47747fb9{solr-jetty-context.xml,/solr,file:///D:/GABY/solr-9.6.1/server/solr-webapp/webapp/,AVAILABLE}{D:\GABY\solr-9.6.1\server/solr-webapp/webapp}
+2025-04-11 16:34:56.856 INFO  (coreLoadExecutor-11-thread-2) [c: s: r: x:modulo t:] o.a.s.s.DirectSolrSpellChecker init: {maxEdits=2, minPrefix=1, maxInspections=5, minQueryLength=4, name=default, field=_text_, classname=solr.DirectSolrSpellChecker, distanceMeasure=internal, accuracy=0.5, maxQueryFrequency=0.01}
+2025-04-11 16:34:56.856 INFO  (coreLoadExecutor-11-thread-3) [c: s: r: x:Topics t:] o.a.s.s.DirectSolrSpellChecker init: {maxEdits=2, minPrefix=1, maxInspections=5, minQueryLength=4, name=default, field=_text_, classname=solr.DirectSolrSpellChecker, distanceMeasure=internal, accuracy=0.5, maxQueryFrequency=0.01}
+2025-04-11 16:34:56.858 INFO  (main) [c: s: r: x: t:] o.a.s.c.CoreContainer Shutting down CoreContainer instance=1730595945
+2025-04-11 16:34:56.871 INFO  (coreLoadExecutor-11-thread-3) [c: s: r: x:Topics t:] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2025-04-11 16:34:56.871 INFO  (coreLoadExecutor-11-thread-2) [c: s: r: x:modulo t:] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2025-04-11 16:34:56.875 INFO  (searcherExecutor-15-thread-1-processing-Topics) [c: s: r: x:Topics t:] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2025-04-11 16:34:56.875 INFO  (searcherExecutor-13-thread-1-processing-modulo) [c: s: r: x:modulo t:] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2025-04-11 16:34:56.875 INFO  (searcherExecutor-13-thread-1-processing-modulo) [c: s: r: x:modulo t:] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2025-04-11 16:34:56.875 INFO  (searcherExecutor-15-thread-1-processing-Topics) [c: s: r: x:Topics t:] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2025-04-11 16:34:56.875 INFO  (coreLoadExecutor-11-thread-2) [c: s: r: x:modulo t:] o.a.s.c.SolrCore CLOSING SolrCore org.apache.solr.core.SolrCore@20178b2e modulo
+2025-04-11 16:34:56.876 INFO  (coreLoadExecutor-11-thread-3) [c: s: r: x:Topics t:] o.a.s.c.SolrCore CLOSING SolrCore org.apache.solr.core.SolrCore@df760ca Topics
+2025-04-11 16:34:56.877 INFO  (coreLoadExecutor-11-thread-2) [c: s: r: x:modulo t:] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.modulo tag=SolrCore@20178b2e
+2025-04-11 16:34:56.880 INFO  (searcherExecutor-13-thread-1-processing-modulo) [c: s: r: x:modulo t:] o.a.s.c.SolrCore Registered new searcher autowarm time: 0 ms
+2025-04-11 16:34:56.880 INFO  (searcherExecutor-15-thread-1-processing-Topics) [c: s: r: x:Topics t:] o.a.s.c.SolrCore Registered new searcher autowarm time: 0 ms
+2025-04-11 16:34:56.880 INFO  (coreLoadExecutor-11-thread-3) [c: s: r: x:Topics t:] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.Topics tag=SolrCore@df760ca
+2025-04-11 16:34:56.902 INFO  (coreLoadExecutor-11-thread-3) [c: s: r: x:Topics t:] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
+2025-04-11 16:34:56.902 INFO  (coreLoadExecutor-11-thread-2) [c: s: r: x:modulo t:] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
+2025-04-11 16:34:56.918 ERROR (coreLoadExecutor-11-thread-2) [c: s: r: x: t:] o.a.s.c.CoreContainer SolrCore failed to load on startup => org.apache.solr.common.SolrException: Unable to create core [modulo]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1750)
+org.apache.solr.common.SolrException: Unable to create core [modulo]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1750) ~[?:?]
+	at org.apache.solr.core.CoreContainer.lambda$loadInternal$12(CoreContainer.java:1057) ~[?:?]
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedRunnable.run(InstrumentedExecutorService.java:212) ~[metrics-core-4.2.25.jar:4.2.25]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:363) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:833) [?:?]
+Caused by: java.lang.IllegalStateException: This CoreContainer has been closed
+	at org.apache.solr.core.CoreContainer.registerCore(CoreContainer.java:1488) ~[?:?]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1727) ~[?:?]
+	... 8 more
+2025-04-11 16:34:56.918 ERROR (coreLoadExecutor-11-thread-3) [c: s: r: x: t:] o.a.s.c.CoreContainer SolrCore failed to load on startup => org.apache.solr.common.SolrException: Unable to create core [Topics]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1750)
+org.apache.solr.common.SolrException: Unable to create core [Topics]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1750) ~[?:?]
+	at org.apache.solr.core.CoreContainer.lambda$loadInternal$12(CoreContainer.java:1057) ~[?:?]
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedRunnable.run(InstrumentedExecutorService.java:212) ~[metrics-core-4.2.25.jar:4.2.25]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:363) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:833) [?:?]
+Caused by: java.lang.IllegalStateException: This CoreContainer has been closed
+	at org.apache.solr.core.CoreContainer.registerCore(CoreContainer.java:1488) ~[?:?]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1727) ~[?:?]
+	... 8 more
+2025-04-11 16:34:57.489 INFO  (coreLoadExecutor-11-thread-1) [c: s: r: x:discursos t:] o.a.s.c.CoreContainer Creating SolrCore 'discursos' using configuration from instancedir D:\GABY\solr-9.6.1\server\solr\discursos, trusted=true
+2025-04-11 16:34:57.489 INFO  (coreLoadExecutor-11-thread-1) [c: s: r: x:discursos t:] o.a.s.c.SolrCore Opening new SolrCore at [D:\GABY\solr-9.6.1\server\solr\discursos], dataDir=[D:\GABY\solr-9.6.1\server\solr\discursos\data\]
+2025-04-11 16:34:57.581 INFO  (coreLoadExecutor-11-thread-1) [c: s: r: x:discursos t:] o.a.s.j.SolrRequestAuthorizer Creating a new SolrRequestAuthorizer
+2025-04-11 16:34:57.581 INFO  (coreLoadExecutor-11-thread-1) [c: s: r: x:discursos t:] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2025-04-11 16:34:57.581 INFO  (coreLoadExecutor-11-thread-1) [c: s: r: x:discursos t:] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2025-04-11 16:34:57.597 INFO  (coreLoadExecutor-11-thread-1) [c: s: r: x:discursos t:] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2025-04-11 16:34:57.598 INFO  (coreLoadExecutor-11-thread-1) [c: s: r: x:discursos t:] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2025-04-11 16:34:57.645 INFO  (coreLoadExecutor-11-thread-1) [c: s: r: x:discursos t:] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: D:\GABY\solr-9.6.1\server\solr\discursos\conf
+2025-04-11 16:34:57.645 INFO  (coreLoadExecutor-11-thread-1) [c: s: r: x:discursos t:] o.a.s.h.c.SuggestComponent Initializing SuggestComponent
+2025-04-11 16:34:57.645 INFO  (coreLoadExecutor-11-thread-1) [c: s: r: x:discursos t:] o.a.s.s.s.SolrSuggester init: {name=mySuggester, lookupImpl=AnalyzingInfixLookupFactory, dictionaryImpl=DocumentDictionaryFactory, field=tags, suggestAnalyzerFieldType=suggest_field}
+2025-04-11 16:34:57.756 INFO  (coreLoadExecutor-11-thread-1) [c: s: r: x:discursos t:] o.a.s.s.s.SolrSuggester Dictionary loaded with params: {name=mySuggester, lookupImpl=AnalyzingInfixLookupFactory, dictionaryImpl=DocumentDictionaryFactory, field=tags, suggestAnalyzerFieldType=suggest_field}
+2025-04-11 16:34:57.756 INFO  (coreLoadExecutor-11-thread-1) [c: s: r: x:discursos t:] o.a.s.h.c.SuggestComponent Registering searcher listener for suggester: mySuggester = SuggesterListener [core=org.apache.solr.core.SolrCore@8c11edc discursos, suggester=SolrSuggester [ name=mySuggester, sourceLocation=null, storeDir=, lookupImpl=AnalyzingInfixLookupFactory, dictionaryImpl=DocumentDictionaryFactory, sizeInBytes=0 ], buildOnCommit=false, buildOnOptimize=false, buildOnStartup=true, isCoreReload=false]
+2025-04-11 16:34:57.778 INFO  (coreLoadExecutor-11-thread-1) [c: s: r: x:discursos t:] o.a.s.s.DirectSolrSpellChecker init: {maxEdits=2, minPrefix=1, maxInspections=5, minQueryLength=4, name=default, field=_text_, classname=solr.DirectSolrSpellChecker, distanceMeasure=internal, accuracy=0.5, maxQueryFrequency=0.01}
+2025-04-11 16:34:57.790 INFO  (coreLoadExecutor-11-thread-1) [c: s: r: x:discursos t:] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2025-04-11 16:34:57.791 INFO  (searcherExecutor-26-thread-1-processing-discursos) [c: s: r: x:discursos t:] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2025-04-11 16:34:57.791 INFO  (coreLoadExecutor-11-thread-1) [c: s: r: x:discursos t:] o.a.s.c.SolrCore CLOSING SolrCore org.apache.solr.core.SolrCore@8c11edc discursos
+2025-04-11 16:34:57.791 INFO  (searcherExecutor-26-thread-1-processing-discursos) [c: s: r: x:discursos t:] o.a.s.h.c.SuggestComponent buildOnStartup: mySuggester
+2025-04-11 16:34:57.791 INFO  (searcherExecutor-26-thread-1-processing-discursos) [c: s: r: x:discursos t:] o.a.s.s.s.SolrSuggester SolrSuggester.build(mySuggester)
+2025-04-11 16:34:57.791 INFO  (coreLoadExecutor-11-thread-1) [c: s: r: x:discursos t:] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.discursos tag=SolrCore@8c11edc
+2025-04-11 16:34:57.795 INFO  (coreLoadExecutor-11-thread-1) [c: s: r: x:discursos t:] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
+2025-04-11 16:34:57.807 ERROR (searcherExecutor-26-thread-1-processing-discursos) [c: s: r: x:discursos t:] o.a.s.h.c.SuggestComponent Exception in building suggester index for mySuggester:  => org.apache.solr.update.SolrCoreState$CoreIsClosedException: Suggester build has been interrupted by a core reload or shutdown.
+	at org.apache.solr.spelling.suggest.SolrSuggester.build(SolrSuggester.java:177)
+org.apache.solr.update.SolrCoreState$CoreIsClosedException: Suggester build has been interrupted by a core reload or shutdown.
+	at org.apache.solr.spelling.suggest.SolrSuggester.build(SolrSuggester.java:177) ~[?:?]
+	at org.apache.solr.handler.component.SuggestComponent$SuggesterListener.buildSuggesterIndex(SuggestComponent.java:583) ~[?:?]
+	at org.apache.solr.handler.component.SuggestComponent$SuggesterListener.newSearcher(SuggestComponent.java:562) ~[?:?]
+	at org.apache.solr.core.SolrCore.lambda$getSearcher$19(SolrCore.java:2641) ~[?:?]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:363) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:833) [?:?]
+Caused by: org.apache.lucene.store.AlreadyClosedException: this Directory is closed
+	at org.apache.lucene.store.BaseDirectory.ensureOpen(BaseDirectory.java:50) ~[?:?]
+	at org.apache.lucene.store.FSDirectory.getDirectory(FSDirectory.java:293) ~[?:?]
+	at org.apache.lucene.store.NativeFSLockFactory.obtainFSLock(NativeFSLockFactory.java:74) ~[?:?]
+	at org.apache.lucene.store.FSLockFactory.obtainLock(FSLockFactory.java:43) ~[?:?]
+	at org.apache.lucene.store.BaseDirectory.obtainLock(BaseDirectory.java:44) ~[?:?]
+	at org.apache.lucene.index.IndexWriter.<init>(IndexWriter.java:953) ~[?:?]
+	at org.apache.lucene.search.suggest.analyzing.AnalyzingInfixSuggester.build(AnalyzingInfixSuggester.java:341) ~[?:?]
+	at org.apache.lucene.search.suggest.Lookup.build(Lookup.java:175) ~[?:?]
+	at org.apache.solr.spelling.suggest.SolrSuggester.build(SolrSuggester.java:175) ~[?:?]
+	... 8 more
+2025-04-11 16:34:57.808 INFO  (searcherExecutor-26-thread-1-processing-discursos) [c: s: r: x:discursos t:] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2025-04-11 16:34:57.808 INFO  (searcherExecutor-26-thread-1-processing-discursos) [c: s: r: x:discursos t:] o.a.s.c.SolrCore Registered new searcher autowarm time: 0 ms
+2025-04-11 16:34:57.812 ERROR (coreLoadExecutor-11-thread-1) [c: s: r: x: t:] o.a.s.c.CoreContainer SolrCore failed to load on startup => org.apache.solr.common.SolrException: Unable to create core [discursos]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1750)
+org.apache.solr.common.SolrException: Unable to create core [discursos]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1750) ~[?:?]
+	at org.apache.solr.core.CoreContainer.lambda$loadInternal$12(CoreContainer.java:1057) ~[?:?]
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedRunnable.run(InstrumentedExecutorService.java:212) ~[metrics-core-4.2.25.jar:4.2.25]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:363) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:833) [?:?]
+Caused by: java.lang.IllegalStateException: This CoreContainer has been closed
+	at org.apache.solr.core.CoreContainer.registerCore(CoreContainer.java:1488) ~[?:?]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1727) ~[?:?]
+	... 8 more
+2025-04-11 16:34:57.812 INFO  (main) [c: s: r: x: t:] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node tag=null
+2025-04-11 16:34:57.816 INFO  (main) [c: s: r: x: t:] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm tag=null
+2025-04-11 16:34:57.816 INFO  (main) [c: s: r: x: t:] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty tag=null
+2025-04-11 16:34:57.835 INFO  (main) [c: s: r: x: t:] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@47747fb9{solr-jetty-context.xml,/solr,null,STOPPED}{D:\GABY\solr-9.6.1\server/solr-webapp/webapp}
+2025-04-11 16:34:57.841 WARN  (main) [c: s: r: x: t:] o.e.j.x.XmlConfiguration Unable to execute XmlConfiguration => java.io.FileNotFoundException: D:\GABY\solr-9.6.1\server\logs\2025_04_11.request.log (El archivo o directorio está dañado o es ilegible)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+java.io.FileNotFoundException: D:\GABY\solr-9.6.1\server\logs\2025_04_11.request.log (El archivo o directorio está dañado o es ilegible)
+	at java.base/java.io.FileOutputStream.open0(Native Method) ~[?:?]
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:293) ~[?:?]
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:235) ~[?:?]
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:155) ~[?:?]
+	at org.eclipse.jetty.util.RolloverFileOutputStream.setFile(RolloverFileOutputStream.java:281) ~[jetty-util-10.0.20.jar:10.0.20]
+	at org.eclipse.jetty.util.RolloverFileOutputStream.<init>(RolloverFileOutputStream.java:180) ~[jetty-util-10.0.20.jar:10.0.20]
+	at org.eclipse.jetty.util.RolloverFileOutputStream.<init>(RolloverFileOutputStream.java:143) ~[jetty-util-10.0.20.jar:10.0.20]
+	at org.eclipse.jetty.server.RequestLogWriter.doStart(RequestLogWriter.java:192) ~[jetty-server-10.0.20.jar:10.0.20]
+	at org.eclipse.jetty.server.AsyncRequestLogWriter.doStart(AsyncRequestLogWriter.java:92) ~[jetty-server-10.0.20.jar:10.0.20]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:93) ~[jetty-util-10.0.20.jar:10.0.20]
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:171) ~[jetty-util-10.0.20.jar:10.0.20]
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:121) ~[jetty-util-10.0.20.jar:10.0.20]
+	at org.eclipse.jetty.server.CustomRequestLog.doStart(CustomRequestLog.java:483) ~[jetty-server-10.0.20.jar:10.0.20]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:93) ~[jetty-util-10.0.20.jar:10.0.20]
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:171) ~[jetty-util-10.0.20.jar:10.0.20]
+	at org.eclipse.jetty.server.Server.start(Server.java:470) ~[jetty-server-10.0.20.jar:10.0.20]
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:121) ~[jetty-util-10.0.20.jar:10.0.20]
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:89) ~[jetty-server-10.0.20.jar:10.0.20]
+	at org.eclipse.jetty.server.Server.doStart(Server.java:415) ~[jetty-server-10.0.20.jar:10.0.20]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:93) ~[jetty-util-10.0.20.jar:10.0.20]
+	at org.eclipse.jetty.xml.XmlConfiguration.main(XmlConfiguration.java:1919) ~[jetty-xml-10.0.20.jar:10.0.20]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577) ~[?:?]
+	at org.eclipse.jetty.start.Main.invokeMain(Main.java:229) ~[start.jar:10.0.20]
+	at org.eclipse.jetty.start.Main.start(Main.java:528) ~[start.jar:10.0.20]
+	at org.eclipse.jetty.start.Main.main(Main.java:76) ~[start.jar:10.0.20]
+2025-04-11 16:39:20.556 INFO  (main) [c: s: r: x: t:] o.e.j.s.Server jetty-10.0.20; built: 2024-01-29T20:46:45.278Z; git: 3a745c71c23682146f262b99f4ddc4c1bc41630c; jvm 18.0.1+10-24
+2025-04-11 16:39:21.158 WARN  (main) [c: s: r: x: t:] o.e.j.u.DeprecationWarning Using @Deprecated Class org.eclipse.jetty.servlet.listener.ELContextCleaner
+2025-04-11 16:39:21.217 INFO  (main) [c: s: r: x: t:] o.a.s.s.CoreContainerProvider Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2025-04-11 16:39:21.225 INFO  (main) [c: s: r: x: t:] o.a.s.s.CoreContainerProvider  ___      _       Welcome to Apache Solr™ version 9.6.1
+2025-04-11 16:39:21.225 INFO  (main) [c: s: r: x: t:] o.a.s.s.CoreContainerProvider / __| ___| |_ _   Starting in standalone mode on port 8983
+2025-04-11 16:39:21.225 INFO  (main) [c: s: r: x: t:] o.a.s.s.CoreContainerProvider \__ \/ _ \ | '_|  Install dir: D:\GABY\solr-9.6.1
+2025-04-11 16:39:21.225 INFO  (main) [c: s: r: x: t:] o.a.s.s.CoreContainerProvider |___/\___/_|_|    Start time: 2025-04-11T16:39:21.225887500Z
+2025-04-11 16:39:21.229 INFO  (main) [c: s: r: x: t:] o.a.s.s.CoreContainerProvider Solr started with "-XX:+CrashOnOutOfMemoryError" that will crash on any OutOfMemoryError exception. The cause of the OOME will be logged in the crash file at the following path: D:\GABY\solr-9.6.1\server\logs\jvm_crash_11444.log
+2025-04-11 16:39:21.269 INFO  (main) [c: s: r: x: t:] o.a.s.s.CoreContainerProvider Solr Home: D:\GABY\solr-9.6.1\server\solr (source: system property: solr.solr.home)
+2025-04-11 16:39:21.303 INFO  (main) [c: s: r: x: t:] o.a.s.c.SolrXmlConfig Loading solr.xml from D:\GABY\solr-9.6.1\server\solr\solr.xml
+2025-04-11 16:39:21.354 INFO  (main) [c: s: r: x: t:] o.a.s.c.SolrResourceLoader Added 1 libs to classloader, from paths: [/D:/GABY/solr-9.6.1/lib]
+2025-04-11 16:39:22.605 INFO  (main) [c: s: r: x: t:] o.a.s.u.t.SimplePropagator Always-on trace id generation enabled.
+2025-04-11 16:39:23.066 WARN  (main) [c: s: r: x: t:] o.a.s.u.StartupLoggingUtils Jetty request logging enabled. Will retain logs for last 3 days. See chapter "Configuring Logging" in reference guide for how to configure.
+2025-04-11 16:39:23.082 WARN  (main) [c: s: r: x: t:] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
+2025-04-11 16:39:23.422 INFO  (main) [c: s: r: x: t:] o.a.s.c.CorePropertiesLocator Found 3 core definitions underneath D:\GABY\solr-9.6.1\server\solr
+2025-04-11 16:39:23.422 INFO  (main) [c: s: r: x: t:] o.a.s.c.CorePropertiesLocator Cores are: [discursos, modulo, Topics]
+2025-04-11 16:39:23.484 INFO  (coreLoadExecutor-11-thread-2) [c: s: r: x:modulo t:] o.a.s.c.SolrConfig Using Lucene MatchVersion: 9.10.0
+2025-04-11 16:39:23.484 INFO  (coreLoadExecutor-11-thread-1) [c: s: r: x:discursos t:] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.11.1
+2025-04-11 16:39:23.484 INFO  (coreLoadExecutor-11-thread-3) [c: s: r: x:Topics t:] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.11.1
+2025-04-11 16:39:23.568 WARN  (coreLoadExecutor-11-thread-3) [c: s: r: x:Topics t:] o.a.s.c.SolrConfig solrconfig.xml: <jmx> is no longer supported, use solr.xml:/metrics/reporter section instead
+2025-04-11 16:39:23.568 WARN  (coreLoadExecutor-11-thread-1) [c: s: r: x:discursos t:] o.a.s.c.SolrConfig solrconfig.xml: <jmx> is no longer supported, use solr.xml:/metrics/reporter section instead
+2025-04-11 16:39:23.673 INFO  (coreLoadExecutor-11-thread-2) [c: s: r: x:modulo t:] o.a.s.s.IndexSchema Schema name=default-config
+2025-04-11 16:39:23.673 INFO  (coreLoadExecutor-11-thread-3) [c: s: r: x:Topics t:] o.a.s.s.IndexSchema Schema name=default-config
+2025-04-11 16:39:23.676 INFO  (coreLoadExecutor-11-thread-1) [c: s: r: x:discursos t:] o.a.s.s.IndexSchema Schema name=default-config
+2025-04-11 16:39:24.114 WARN  (main) [c: s: r: x: t:] o.g.j.m.i.MessagingBinders A class jakarta.activation.DataSource for a default provider MessageBodyWriter<jakarta.activation.DataSource> was not found. The provider is not available.
+2025-04-11 16:39:24.347 INFO  (coreLoadExecutor-11-thread-3) [c: s: r: x:Topics t:] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2025-04-11 16:39:24.347 INFO  (coreLoadExecutor-11-thread-2) [c: s: r: x:modulo t:] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2025-04-11 16:39:24.347 INFO  (coreLoadExecutor-11-thread-2) [c: s: r: x:modulo t:] o.a.s.c.CoreContainer Creating SolrCore 'modulo' using configuration from instancedir D:\GABY\solr-9.6.1\server\solr\modulo, trusted=true
+2025-04-11 16:39:24.406 INFO  (coreLoadExecutor-11-thread-3) [c: s: r: x:Topics t:] o.a.s.c.CoreContainer Creating SolrCore 'Topics' using configuration from instancedir D:\GABY\solr-9.6.1\server\solr\Topics, trusted=true
+2025-04-11 16:39:24.476 INFO  (coreLoadExecutor-11-thread-2) [c: s: r: x:modulo t:] o.a.s.c.SolrCore Opening new SolrCore at [D:\GABY\solr-9.6.1\server\solr\modulo], dataDir=[D:\GABY\solr-9.6.1\server\solr\modulo\data\]
+2025-04-11 16:39:24.476 INFO  (coreLoadExecutor-11-thread-3) [c: s: r: x:Topics t:] o.a.s.c.SolrCore Opening new SolrCore at [D:\GABY\solr-9.6.1\server\solr\Topics], dataDir=[D:\GABY\solr-9.6.1\server\solr\Topics\data\]
+2025-04-11 16:39:24.991 INFO  (main) [c: s: r: x: t:] o.a.s.j.SolrRequestAuthorizer Creating a new SolrRequestAuthorizer
+2025-04-11 16:39:25.715 INFO  (coreLoadExecutor-11-thread-1) [c: s: r: x:discursos t:] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2025-04-11 16:39:25.759 INFO  (coreLoadExecutor-11-thread-2) [c: s: r: x:modulo t:] o.a.s.j.SolrRequestAuthorizer Creating a new SolrRequestAuthorizer
+2025-04-11 16:39:25.759 INFO  (coreLoadExecutor-11-thread-3) [c: s: r: x:Topics t:] o.a.s.j.SolrRequestAuthorizer Creating a new SolrRequestAuthorizer
+2025-04-11 16:39:25.796 INFO  (coreLoadExecutor-11-thread-2) [c: s: r: x:modulo t:] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2025-04-11 16:39:25.796 INFO  (coreLoadExecutor-11-thread-3) [c: s: r: x:Topics t:] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2025-04-11 16:39:25.796 INFO  (coreLoadExecutor-11-thread-2) [c: s: r: x:modulo t:] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2025-04-11 16:39:25.796 INFO  (coreLoadExecutor-11-thread-3) [c: s: r: x:Topics t:] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2025-04-11 16:39:25.899 INFO  (coreLoadExecutor-11-thread-3) [c: s: r: x:Topics t:] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2025-04-11 16:39:25.899 INFO  (coreLoadExecutor-11-thread-3) [c: s: r: x:Topics t:] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2025-04-11 16:39:25.899 INFO  (coreLoadExecutor-11-thread-2) [c: s: r: x:modulo t:] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2025-04-11 16:39:25.899 INFO  (coreLoadExecutor-11-thread-2) [c: s: r: x:modulo t:] o.a.s.u.CommitTracker Soft AutoCommit: if uncommitted for 3000ms; 
+2025-04-11 16:39:26.181 INFO  (main) [c: s: r: x: t:] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@52eacb4b{solr-jetty-context.xml,/solr,file:///D:/GABY/solr-9.6.1/server/solr-webapp/webapp/,AVAILABLE}{D:\GABY\solr-9.6.1\server/solr-webapp/webapp}
+2025-04-11 16:39:26.220 INFO  (main) [c: s: r: x: t:] o.a.s.c.CoreContainer Shutting down CoreContainer instance=463690173
+2025-04-11 16:39:26.262 INFO  (coreLoadExecutor-11-thread-2) [c: s: r: x:modulo t:] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: D:\GABY\solr-9.6.1\server\solr\modulo\conf
+2025-04-11 16:39:26.262 INFO  (coreLoadExecutor-11-thread-3) [c: s: r: x:Topics t:] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: D:\GABY\solr-9.6.1\server\solr\Topics\conf
+2025-04-11 16:39:26.291 INFO  (coreLoadExecutor-11-thread-3) [c: s: r: x:Topics t:] o.a.s.s.DirectSolrSpellChecker init: {accuracy=0.5, maxQueryFrequency=0.01, maxEdits=2, minPrefix=1, maxInspections=5, minQueryLength=4, name=default, field=_text_, classname=solr.DirectSolrSpellChecker, distanceMeasure=internal}
+2025-04-11 16:39:26.291 INFO  (coreLoadExecutor-11-thread-2) [c: s: r: x:modulo t:] o.a.s.s.DirectSolrSpellChecker init: {accuracy=0.5, maxQueryFrequency=0.01, maxEdits=2, minPrefix=1, maxInspections=5, minQueryLength=4, name=default, field=_text_, classname=solr.DirectSolrSpellChecker, distanceMeasure=internal}
+2025-04-11 16:39:26.307 INFO  (coreLoadExecutor-11-thread-2) [c: s: r: x:modulo t:] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2025-04-11 16:39:26.307 INFO  (coreLoadExecutor-11-thread-3) [c: s: r: x:Topics t:] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2025-04-11 16:39:26.313 INFO  (searcherExecutor-15-thread-1-processing-modulo) [c: s: r: x:modulo t:] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2025-04-11 16:39:26.313 INFO  (searcherExecutor-14-thread-1-processing-Topics) [c: s: r: x:Topics t:] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2025-04-11 16:39:26.313 INFO  (searcherExecutor-14-thread-1-processing-Topics) [c: s: r: x:Topics t:] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2025-04-11 16:39:26.313 INFO  (searcherExecutor-15-thread-1-processing-modulo) [c: s: r: x:modulo t:] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2025-04-11 16:39:26.314 INFO  (coreLoadExecutor-11-thread-2) [c: s: r: x:modulo t:] o.a.s.c.SolrCore CLOSING SolrCore org.apache.solr.core.SolrCore@24124621 modulo
+2025-04-11 16:39:26.314 INFO  (coreLoadExecutor-11-thread-3) [c: s: r: x:Topics t:] o.a.s.c.SolrCore CLOSING SolrCore org.apache.solr.core.SolrCore@12f15491 Topics
+2025-04-11 16:39:26.315 INFO  (coreLoadExecutor-11-thread-3) [c: s: r: x:Topics t:] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.Topics tag=SolrCore@12f15491
+2025-04-11 16:39:26.329 INFO  (coreLoadExecutor-11-thread-2) [c: s: r: x:modulo t:] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.modulo tag=SolrCore@24124621
+2025-04-11 16:39:26.329 INFO  (searcherExecutor-14-thread-1-processing-Topics) [c: s: r: x:Topics t:] o.a.s.c.SolrCore Registered new searcher autowarm time: 0 ms
+2025-04-11 16:39:26.329 INFO  (searcherExecutor-15-thread-1-processing-modulo) [c: s: r: x:modulo t:] o.a.s.c.SolrCore Registered new searcher autowarm time: 0 ms
+2025-04-11 16:39:26.343 INFO  (coreLoadExecutor-11-thread-3) [c: s: r: x:Topics t:] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
+2025-04-11 16:39:26.343 INFO  (coreLoadExecutor-11-thread-2) [c: s: r: x:modulo t:] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
+2025-04-11 16:39:26.369 ERROR (coreLoadExecutor-11-thread-3) [c: s: r: x: t:] o.a.s.c.CoreContainer SolrCore failed to load on startup => org.apache.solr.common.SolrException: Unable to create core [Topics]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1750)
+org.apache.solr.common.SolrException: Unable to create core [Topics]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1750) ~[?:?]
+	at org.apache.solr.core.CoreContainer.lambda$loadInternal$12(CoreContainer.java:1057) ~[?:?]
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedRunnable.run(InstrumentedExecutorService.java:212) ~[metrics-core-4.2.25.jar:4.2.25]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:363) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:833) [?:?]
+Caused by: java.lang.IllegalStateException: This CoreContainer has been closed
+	at org.apache.solr.core.CoreContainer.registerCore(CoreContainer.java:1488) ~[?:?]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1727) ~[?:?]
+	... 8 more
+2025-04-11 16:39:26.369 ERROR (coreLoadExecutor-11-thread-2) [c: s: r: x: t:] o.a.s.c.CoreContainer SolrCore failed to load on startup => org.apache.solr.common.SolrException: Unable to create core [modulo]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1750)
+org.apache.solr.common.SolrException: Unable to create core [modulo]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1750) ~[?:?]
+	at org.apache.solr.core.CoreContainer.lambda$loadInternal$12(CoreContainer.java:1057) ~[?:?]
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedRunnable.run(InstrumentedExecutorService.java:212) ~[metrics-core-4.2.25.jar:4.2.25]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:363) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:833) [?:?]
+Caused by: java.lang.IllegalStateException: This CoreContainer has been closed
+	at org.apache.solr.core.CoreContainer.registerCore(CoreContainer.java:1488) ~[?:?]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1727) ~[?:?]
+	... 8 more
+2025-04-11 16:39:26.836 INFO  (coreLoadExecutor-11-thread-1) [c: s: r: x:discursos t:] o.a.s.c.CoreContainer Creating SolrCore 'discursos' using configuration from instancedir D:\GABY\solr-9.6.1\server\solr\discursos, trusted=true
+2025-04-11 16:39:26.838 INFO  (coreLoadExecutor-11-thread-1) [c: s: r: x:discursos t:] o.a.s.c.SolrCore Opening new SolrCore at [D:\GABY\solr-9.6.1\server\solr\discursos], dataDir=[D:\GABY\solr-9.6.1\server\solr\discursos\data\]
+2025-04-11 16:39:26.928 INFO  (coreLoadExecutor-11-thread-1) [c: s: r: x:discursos t:] o.a.s.j.SolrRequestAuthorizer Creating a new SolrRequestAuthorizer
+2025-04-11 16:39:26.941 INFO  (coreLoadExecutor-11-thread-1) [c: s: r: x:discursos t:] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2025-04-11 16:39:26.941 INFO  (coreLoadExecutor-11-thread-1) [c: s: r: x:discursos t:] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2025-04-11 16:39:26.950 INFO  (coreLoadExecutor-11-thread-1) [c: s: r: x:discursos t:] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2025-04-11 16:39:26.950 INFO  (coreLoadExecutor-11-thread-1) [c: s: r: x:discursos t:] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2025-04-11 16:39:27.012 INFO  (coreLoadExecutor-11-thread-1) [c: s: r: x:discursos t:] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: D:\GABY\solr-9.6.1\server\solr\discursos\conf
+2025-04-11 16:39:27.012 INFO  (coreLoadExecutor-11-thread-1) [c: s: r: x:discursos t:] o.a.s.h.c.SuggestComponent Initializing SuggestComponent
+2025-04-11 16:39:27.014 INFO  (coreLoadExecutor-11-thread-1) [c: s: r: x:discursos t:] o.a.s.s.s.SolrSuggester init: {name=mySuggester, lookupImpl=AnalyzingInfixLookupFactory, dictionaryImpl=DocumentDictionaryFactory, field=tags, suggestAnalyzerFieldType=suggest_field}
+2025-04-11 16:39:27.024 INFO  (coreLoadExecutor-11-thread-1) [c: s: r: x:discursos t:] o.a.s.s.s.SolrSuggester Dictionary loaded with params: {name=mySuggester, lookupImpl=AnalyzingInfixLookupFactory, dictionaryImpl=DocumentDictionaryFactory, field=tags, suggestAnalyzerFieldType=suggest_field}
+2025-04-11 16:39:27.024 INFO  (coreLoadExecutor-11-thread-1) [c: s: r: x:discursos t:] o.a.s.h.c.SuggestComponent Registering searcher listener for suggester: mySuggester = SuggesterListener [core=org.apache.solr.core.SolrCore@5abc1e04 discursos, suggester=SolrSuggester [ name=mySuggester, sourceLocation=null, storeDir=, lookupImpl=AnalyzingInfixLookupFactory, dictionaryImpl=DocumentDictionaryFactory, sizeInBytes=0 ], buildOnCommit=false, buildOnOptimize=false, buildOnStartup=true, isCoreReload=false]
+2025-04-11 16:39:27.048 INFO  (coreLoadExecutor-11-thread-1) [c: s: r: x:discursos t:] o.a.s.s.DirectSolrSpellChecker init: {accuracy=0.5, maxQueryFrequency=0.01, maxEdits=2, minPrefix=1, maxInspections=5, minQueryLength=4, name=default, field=_text_, classname=solr.DirectSolrSpellChecker, distanceMeasure=internal}
+2025-04-11 16:39:27.048 INFO  (coreLoadExecutor-11-thread-1) [c: s: r: x:discursos t:] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2025-04-11 16:39:27.048 INFO  (searcherExecutor-26-thread-1-processing-discursos) [c: s: r: x:discursos t:] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2025-04-11 16:39:27.048 INFO  (coreLoadExecutor-11-thread-1) [c: s: r: x:discursos t:] o.a.s.c.SolrCore CLOSING SolrCore org.apache.solr.core.SolrCore@5abc1e04 discursos
+2025-04-11 16:39:27.048 INFO  (searcherExecutor-26-thread-1-processing-discursos) [c: s: r: x:discursos t:] o.a.s.h.c.SuggestComponent buildOnStartup: mySuggester
+2025-04-11 16:39:27.048 INFO  (coreLoadExecutor-11-thread-1) [c: s: r: x:discursos t:] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.discursos tag=SolrCore@5abc1e04
+2025-04-11 16:39:27.048 INFO  (searcherExecutor-26-thread-1-processing-discursos) [c: s: r: x:discursos t:] o.a.s.s.s.SolrSuggester SolrSuggester.build(mySuggester)
+2025-04-11 16:39:27.060 ERROR (searcherExecutor-26-thread-1-processing-discursos) [c: s: r: x:discursos t:] o.a.s.h.c.SuggestComponent Exception in building suggester index for mySuggester:  => org.apache.solr.update.SolrCoreState$CoreIsClosedException: Suggester build has been interrupted by a core reload or shutdown.
+	at org.apache.solr.spelling.suggest.SolrSuggester.build(SolrSuggester.java:177)
+org.apache.solr.update.SolrCoreState$CoreIsClosedException: Suggester build has been interrupted by a core reload or shutdown.
+	at org.apache.solr.spelling.suggest.SolrSuggester.build(SolrSuggester.java:177) ~[?:?]
+	at org.apache.solr.handler.component.SuggestComponent$SuggesterListener.buildSuggesterIndex(SuggestComponent.java:583) ~[?:?]
+	at org.apache.solr.handler.component.SuggestComponent$SuggesterListener.newSearcher(SuggestComponent.java:562) ~[?:?]
+	at org.apache.solr.core.SolrCore.lambda$getSearcher$19(SolrCore.java:2641) ~[?:?]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:363) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:833) [?:?]
+Caused by: org.apache.lucene.store.AlreadyClosedException: this Directory is closed
+	at org.apache.lucene.store.BaseDirectory.ensureOpen(BaseDirectory.java:50) ~[?:?]
+	at org.apache.lucene.store.FSDirectory.getDirectory(FSDirectory.java:293) ~[?:?]
+	at org.apache.lucene.store.NativeFSLockFactory.obtainFSLock(NativeFSLockFactory.java:74) ~[?:?]
+	at org.apache.lucene.store.FSLockFactory.obtainLock(FSLockFactory.java:43) ~[?:?]
+	at org.apache.lucene.store.BaseDirectory.obtainLock(BaseDirectory.java:44) ~[?:?]
+	at org.apache.lucene.index.IndexWriter.<init>(IndexWriter.java:953) ~[?:?]
+	at org.apache.lucene.search.suggest.analyzing.AnalyzingInfixSuggester.build(AnalyzingInfixSuggester.java:341) ~[?:?]
+	at org.apache.lucene.search.suggest.Lookup.build(Lookup.java:175) ~[?:?]
+	at org.apache.solr.spelling.suggest.SolrSuggester.build(SolrSuggester.java:175) ~[?:?]
+	... 8 more
+2025-04-11 16:39:27.060 INFO  (searcherExecutor-26-thread-1-processing-discursos) [c: s: r: x:discursos t:] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2025-04-11 16:39:27.060 INFO  (searcherExecutor-26-thread-1-processing-discursos) [c: s: r: x:discursos t:] o.a.s.c.SolrCore Registered new searcher autowarm time: 0 ms
+2025-04-11 16:39:27.062 INFO  (coreLoadExecutor-11-thread-1) [c: s: r: x:discursos t:] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
+2025-04-11 16:39:27.071 ERROR (coreLoadExecutor-11-thread-1) [c: s: r: x: t:] o.a.s.c.CoreContainer SolrCore failed to load on startup => org.apache.solr.common.SolrException: Unable to create core [discursos]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1750)
+org.apache.solr.common.SolrException: Unable to create core [discursos]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1750) ~[?:?]
+	at org.apache.solr.core.CoreContainer.lambda$loadInternal$12(CoreContainer.java:1057) ~[?:?]
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedRunnable.run(InstrumentedExecutorService.java:212) ~[metrics-core-4.2.25.jar:4.2.25]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:363) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:833) [?:?]
+Caused by: java.lang.IllegalStateException: This CoreContainer has been closed
+	at org.apache.solr.core.CoreContainer.registerCore(CoreContainer.java:1488) ~[?:?]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1727) ~[?:?]
+	... 8 more
+2025-04-11 16:39:27.071 INFO  (main) [c: s: r: x: t:] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node tag=null
+2025-04-11 16:39:27.077 INFO  (main) [c: s: r: x: t:] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm tag=null
+2025-04-11 16:39:27.077 INFO  (main) [c: s: r: x: t:] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty tag=null
+2025-04-11 16:39:27.098 INFO  (main) [c: s: r: x: t:] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@52eacb4b{solr-jetty-context.xml,/solr,null,STOPPED}{D:\GABY\solr-9.6.1\server/solr-webapp/webapp}
+2025-04-11 16:39:27.106 WARN  (main) [c: s: r: x: t:] o.e.j.x.XmlConfiguration Unable to execute XmlConfiguration => java.io.FileNotFoundException: D:\GABY\solr-9.6.1\server\logs\2025_04_11.request.log (El archivo o directorio está dañado o es ilegible)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+java.io.FileNotFoundException: D:\GABY\solr-9.6.1\server\logs\2025_04_11.request.log (El archivo o directorio está dañado o es ilegible)
+	at java.base/java.io.FileOutputStream.open0(Native Method) ~[?:?]
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:293) ~[?:?]
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:235) ~[?:?]
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:155) ~[?:?]
+	at org.eclipse.jetty.util.RolloverFileOutputStream.setFile(RolloverFileOutputStream.java:281) ~[jetty-util-10.0.20.jar:10.0.20]
+	at org.eclipse.jetty.util.RolloverFileOutputStream.<init>(RolloverFileOutputStream.java:180) ~[jetty-util-10.0.20.jar:10.0.20]
+	at org.eclipse.jetty.util.RolloverFileOutputStream.<init>(RolloverFileOutputStream.java:143) ~[jetty-util-10.0.20.jar:10.0.20]
+	at org.eclipse.jetty.server.RequestLogWriter.doStart(RequestLogWriter.java:192) ~[jetty-server-10.0.20.jar:10.0.20]
+	at org.eclipse.jetty.server.AsyncRequestLogWriter.doStart(AsyncRequestLogWriter.java:92) ~[jetty-server-10.0.20.jar:10.0.20]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:93) ~[jetty-util-10.0.20.jar:10.0.20]
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:171) ~[jetty-util-10.0.20.jar:10.0.20]
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:121) ~[jetty-util-10.0.20.jar:10.0.20]
+	at org.eclipse.jetty.server.CustomRequestLog.doStart(CustomRequestLog.java:483) ~[jetty-server-10.0.20.jar:10.0.20]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:93) ~[jetty-util-10.0.20.jar:10.0.20]
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:171) ~[jetty-util-10.0.20.jar:10.0.20]
+	at org.eclipse.jetty.server.Server.start(Server.java:470) ~[jetty-server-10.0.20.jar:10.0.20]
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:121) ~[jetty-util-10.0.20.jar:10.0.20]
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:89) ~[jetty-server-10.0.20.jar:10.0.20]
+	at org.eclipse.jetty.server.Server.doStart(Server.java:415) ~[jetty-server-10.0.20.jar:10.0.20]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:93) ~[jetty-util-10.0.20.jar:10.0.20]
+	at org.eclipse.jetty.xml.XmlConfiguration.main(XmlConfiguration.java:1919) ~[jetty-xml-10.0.20.jar:10.0.20]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577) ~[?:?]
+	at org.eclipse.jetty.start.Main.invokeMain(Main.java:229) ~[start.jar:10.0.20]
+	at org.eclipse.jetty.start.Main.start(Main.java:528) ~[start.jar:10.0.20]
+	at org.eclipse.jetty.start.Main.main(Main.java:76) ~[start.jar:10.0.20]

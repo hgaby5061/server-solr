@@ -1,0 +1,2 @@
+127.0.0.1 - - [05/abr./2025:22:18:31 +0000] "GET /solr/admin/info/system?wt=javabin&version=2 HTTP/2.0" 200 2453
+127.0.0.1 - - [06/abr./2025:13:26:01 +0000] "GET /solr/discursos/select?qt=%2Fselect&q=*%3A*&fl=id%2Ctext%2Cdate%2Ctitle%2Cauthor&rows=155&defType=edismax&wt=javabin&version=2 HTTP/1.1" 200 1875646

@@ -1,0 +1,79 @@
+2025-04-11 18:50:31.959 INFO  (main) [c: s: r: x: t:] o.e.j.s.Server jetty-10.0.20; built: 2024-01-29T20:46:45.278Z; git: 3a745c71c23682146f262b99f4ddc4c1bc41630c; jvm 18.0.1+10-24
+2025-04-11 18:50:34.461 WARN  (main) [c: s: r: x: t:] o.e.j.u.DeprecationWarning Using @Deprecated Class org.eclipse.jetty.servlet.listener.ELContextCleaner
+2025-04-11 18:50:34.706 INFO  (main) [c: s: r: x: t:] o.a.s.s.CoreContainerProvider Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2025-04-11 18:50:34.776 INFO  (main) [c: s: r: x: t:] o.a.s.s.CoreContainerProvider  ___      _       Welcome to Apache Solr™ version 9.6.1
+2025-04-11 18:50:34.776 INFO  (main) [c: s: r: x: t:] o.a.s.s.CoreContainerProvider / __| ___| |_ _   Starting in standalone mode on port 8983
+2025-04-11 18:50:34.776 INFO  (main) [c: s: r: x: t:] o.a.s.s.CoreContainerProvider \__ \/ _ \ | '_|  Install dir: D:\GABY\solr-9.6.1
+2025-04-11 18:50:34.776 INFO  (main) [c: s: r: x: t:] o.a.s.s.CoreContainerProvider |___/\___/_|_|    Start time: 2025-04-11T18:50:34.776300Z
+2025-04-11 18:50:34.776 INFO  (main) [c: s: r: x: t:] o.a.s.s.CoreContainerProvider Solr started with "-XX:+CrashOnOutOfMemoryError" that will crash on any OutOfMemoryError exception. The cause of the OOME will be logged in the crash file at the following path: D:\GABY\solr-9.6.1\server\logs\jvm_crash_12924.log
+2025-04-11 18:50:34.853 INFO  (main) [c: s: r: x: t:] o.a.s.s.CoreContainerProvider Solr Home: D:\GABY\solr-9.6.1\server\solr (source: system property: solr.solr.home)
+2025-04-11 18:50:34.967 INFO  (main) [c: s: r: x: t:] o.a.s.c.SolrXmlConfig Loading solr.xml from D:\GABY\solr-9.6.1\server\solr\solr.xml
+2025-04-11 18:50:35.401 INFO  (main) [c: s: r: x: t:] o.a.s.c.SolrResourceLoader Added 1 libs to classloader, from paths: [/D:/GABY/solr-9.6.1/lib]
+2025-04-11 18:50:39.174 INFO  (main) [c: s: r: x: t:] o.a.s.u.t.SimplePropagator Always-on trace id generation enabled.
+2025-04-11 18:50:39.683 WARN  (main) [c: s: r: x: t:] o.a.s.u.StartupLoggingUtils Jetty request logging enabled. Will retain logs for last 3 days. See chapter "Configuring Logging" in reference guide for how to configure.
+2025-04-11 18:50:39.683 WARN  (main) [c: s: r: x: t:] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
+2025-04-11 18:50:40.422 INFO  (main) [c: s: r: x: t:] o.a.s.c.CorePropertiesLocator Found 3 core definitions underneath D:\GABY\solr-9.6.1\server\solr
+2025-04-11 18:50:40.422 INFO  (main) [c: s: r: x: t:] o.a.s.c.CorePropertiesLocator Cores are: [discursos, modulo, Topics]
+2025-04-11 18:50:40.654 INFO  (coreLoadExecutor-11-thread-3) [c: s: r: x:Topics t:] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.11.1
+2025-04-11 18:50:40.662 INFO  (coreLoadExecutor-11-thread-2) [c: s: r: x:modulo t:] o.a.s.c.SolrConfig Using Lucene MatchVersion: 9.10.0
+2025-04-11 18:50:40.654 INFO  (coreLoadExecutor-11-thread-1) [c: s: r: x:discursos t:] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.11.1
+2025-04-11 18:50:40.899 WARN  (coreLoadExecutor-11-thread-1) [c: s: r: x:discursos t:] o.a.s.c.SolrConfig solrconfig.xml: <jmx> is no longer supported, use solr.xml:/metrics/reporter section instead
+2025-04-11 18:50:40.899 WARN  (coreLoadExecutor-11-thread-3) [c: s: r: x:Topics t:] o.a.s.c.SolrConfig solrconfig.xml: <jmx> is no longer supported, use solr.xml:/metrics/reporter section instead
+2025-04-11 18:50:41.246 INFO  (coreLoadExecutor-11-thread-1) [c: s: r: x:discursos t:] o.a.s.s.IndexSchema Schema name=default-config
+2025-04-11 18:50:41.258 INFO  (coreLoadExecutor-11-thread-3) [c: s: r: x:Topics t:] o.a.s.s.IndexSchema Schema name=default-config
+2025-04-11 18:50:41.283 INFO  (coreLoadExecutor-11-thread-2) [c: s: r: x:modulo t:] o.a.s.s.IndexSchema Schema name=default-config
+2025-04-11 18:50:42.273 WARN  (main) [c: s: r: x: t:] o.g.j.m.i.MessagingBinders A class jakarta.activation.DataSource for a default provider MessageBodyWriter<jakarta.activation.DataSource> was not found. The provider is not available.
+2025-04-11 18:50:43.903 INFO  (main) [c: s: r: x: t:] o.a.s.j.SolrRequestAuthorizer Creating a new SolrRequestAuthorizer
+2025-04-11 18:50:46.422 INFO  (coreLoadExecutor-11-thread-2) [c: s: r: x:modulo t:] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2025-04-11 18:50:46.422 INFO  (coreLoadExecutor-11-thread-3) [c: s: r: x:Topics t:] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2025-04-11 18:50:46.422 INFO  (coreLoadExecutor-11-thread-1) [c: s: r: x:discursos t:] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2025-04-11 18:50:46.422 INFO  (coreLoadExecutor-11-thread-2) [c: s: r: x:modulo t:] o.a.s.c.CoreContainer Creating SolrCore 'modulo' using configuration from instancedir D:\GABY\solr-9.6.1\server\solr\modulo, trusted=true
+2025-04-11 18:50:46.438 INFO  (coreLoadExecutor-11-thread-3) [c: s: r: x:Topics t:] o.a.s.c.CoreContainer Creating SolrCore 'Topics' using configuration from instancedir D:\GABY\solr-9.6.1\server\solr\Topics, trusted=true
+2025-04-11 18:50:46.717 INFO  (coreLoadExecutor-11-thread-2) [c: s: r: x:modulo t:] o.a.s.c.SolrCore Opening new SolrCore at [D:\GABY\solr-9.6.1\server\solr\modulo], dataDir=[D:\GABY\solr-9.6.1\server\solr\modulo\data\]
+2025-04-11 18:50:46.717 INFO  (coreLoadExecutor-11-thread-3) [c: s: r: x:Topics t:] o.a.s.c.SolrCore Opening new SolrCore at [D:\GABY\solr-9.6.1\server\solr\Topics], dataDir=[D:\GABY\solr-9.6.1\server\solr\Topics\data\]
+2025-04-11 18:50:47.061 INFO  (coreLoadExecutor-11-thread-1) [c: s: r: x:discursos t:] o.a.s.c.CoreContainer Creating SolrCore 'discursos' using configuration from instancedir D:\GABY\solr-9.6.1\server\solr\discursos, trusted=true
+2025-04-11 18:50:47.061 INFO  (coreLoadExecutor-11-thread-1) [c: s: r: x:discursos t:] o.a.s.c.SolrCore Opening new SolrCore at [D:\GABY\solr-9.6.1\server\solr\discursos], dataDir=[D:\GABY\solr-9.6.1\server\solr\discursos\data\]
+2025-04-11 18:50:48.829 INFO  (coreLoadExecutor-11-thread-1) [c: s: r: x:discursos t:] o.a.s.j.SolrRequestAuthorizer Creating a new SolrRequestAuthorizer
+2025-04-11 18:50:48.829 INFO  (coreLoadExecutor-11-thread-3) [c: s: r: x:Topics t:] o.a.s.j.SolrRequestAuthorizer Creating a new SolrRequestAuthorizer
+2025-04-11 18:50:48.829 INFO  (coreLoadExecutor-11-thread-2) [c: s: r: x:modulo t:] o.a.s.j.SolrRequestAuthorizer Creating a new SolrRequestAuthorizer
+2025-04-11 18:50:48.893 INFO  (coreLoadExecutor-11-thread-3) [c: s: r: x:Topics t:] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2025-04-11 18:50:48.893 INFO  (coreLoadExecutor-11-thread-1) [c: s: r: x:discursos t:] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2025-04-11 18:50:48.893 INFO  (coreLoadExecutor-11-thread-2) [c: s: r: x:modulo t:] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2025-04-11 18:50:48.893 INFO  (coreLoadExecutor-11-thread-2) [c: s: r: x:modulo t:] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2025-04-11 18:50:48.893 INFO  (coreLoadExecutor-11-thread-3) [c: s: r: x:Topics t:] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2025-04-11 18:50:48.893 INFO  (coreLoadExecutor-11-thread-1) [c: s: r: x:discursos t:] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2025-04-11 18:50:49.970 INFO  (coreLoadExecutor-11-thread-2) [c: s: r: x:modulo t:] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2025-04-11 18:50:49.970 INFO  (coreLoadExecutor-11-thread-2) [c: s: r: x:modulo t:] o.a.s.u.CommitTracker Soft AutoCommit: if uncommitted for 3000ms; 
+2025-04-11 18:50:50.154 INFO  (main) [c: s: r: x: t:] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@4e9658b5{solr-jetty-context.xml,/solr,file:///D:/GABY/solr-9.6.1/server/solr-webapp/webapp/,AVAILABLE}{D:\GABY\solr-9.6.1\server/solr-webapp/webapp}
+2025-04-11 18:50:50.198 INFO  (main) [c: s: r: x: t:] o.e.j.s.RequestLogWriter Opened D:\GABY\solr-9.6.1\server\logs\2025_04_11.request.log
+2025-04-11 18:50:50.224 INFO  (main) [c: s: r: x: t:] o.e.j.s.AbstractConnector Started ServerConnector@2cb3d0f7{HTTP/1.1, (http/1.1, h2c)}{127.0.0.1:8983}
+2025-04-11 18:50:50.231 INFO  (main) [c: s: r: x: t:] o.e.j.s.Server Started Server@3e2822{STARTING}[10.0.20,sto=0] @27286ms
+2025-04-11 18:50:50.314 INFO  (coreLoadExecutor-11-thread-3) [c: s: r: x:Topics t:] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2025-04-11 18:50:50.314 INFO  (coreLoadExecutor-11-thread-3) [c: s: r: x:Topics t:] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2025-04-11 18:50:51.005 INFO  (coreLoadExecutor-11-thread-1) [c: s: r: x:discursos t:] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2025-04-11 18:50:51.005 INFO  (coreLoadExecutor-11-thread-1) [c: s: r: x:discursos t:] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2025-04-11 18:50:51.391 INFO  (qtp1363396194-23-localhost-1) [c: s: r: x: t:localhost-1] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=javabin&version=2} status=0 QTime=219
+2025-04-11 18:50:52.002 INFO  (coreLoadExecutor-11-thread-2) [c: s: r: x:modulo t:] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: D:\GABY\solr-9.6.1\server\solr\modulo\conf
+2025-04-11 18:50:52.085 INFO  (coreLoadExecutor-11-thread-2) [c: s: r: x:modulo t:] o.a.s.s.DirectSolrSpellChecker init: {name=default, field=_text_, classname=solr.DirectSolrSpellChecker, distanceMeasure=internal, maxEdits=2, minPrefix=1, maxInspections=5, minQueryLength=4, accuracy=0.5, maxQueryFrequency=0.01}
+2025-04-11 18:50:52.103 INFO  (coreLoadExecutor-11-thread-2) [c: s: r: x:modulo t:] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2025-04-11 18:50:52.111 INFO  (searcherExecutor-14-thread-1-processing-modulo) [c: s: r: x:modulo t:] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2025-04-11 18:50:52.111 INFO  (searcherExecutor-14-thread-1-processing-modulo) [c: s: r: x:modulo t:] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2025-04-11 18:50:52.128 INFO  (searcherExecutor-14-thread-1-processing-modulo) [c: s: r: x:modulo t:] o.a.s.c.SolrCore Registered new searcher autowarm time: 0 ms
+2025-04-11 18:50:53.740 INFO  (coreLoadExecutor-11-thread-3) [c: s: r: x:Topics t:] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: D:\GABY\solr-9.6.1\server\solr\Topics\conf
+2025-04-11 18:50:53.740 INFO  (coreLoadExecutor-11-thread-3) [c: s: r: x:Topics t:] o.a.s.s.DirectSolrSpellChecker init: {name=default, field=_text_, classname=solr.DirectSolrSpellChecker, distanceMeasure=internal, maxEdits=2, minPrefix=1, maxInspections=5, minQueryLength=4, accuracy=0.5, maxQueryFrequency=0.01}
+2025-04-11 18:50:53.758 INFO  (coreLoadExecutor-11-thread-3) [c: s: r: x:Topics t:] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2025-04-11 18:50:53.759 INFO  (searcherExecutor-15-thread-1-processing-Topics) [c: s: r: x:Topics t:] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2025-04-11 18:50:53.759 INFO  (searcherExecutor-15-thread-1-processing-Topics) [c: s: r: x:Topics t:] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2025-04-11 18:50:53.759 INFO  (searcherExecutor-15-thread-1-processing-Topics) [c: s: r: x:Topics t:] o.a.s.c.SolrCore Registered new searcher autowarm time: 0 ms
+2025-04-11 18:50:54.347 INFO  (coreLoadExecutor-11-thread-1) [c: s: r: x:discursos t:] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: D:\GABY\solr-9.6.1\server\solr\discursos\conf
+2025-04-11 18:50:54.347 INFO  (coreLoadExecutor-11-thread-1) [c: s: r: x:discursos t:] o.a.s.h.c.SuggestComponent Initializing SuggestComponent
+2025-04-11 18:50:54.379 INFO  (coreLoadExecutor-11-thread-1) [c: s: r: x:discursos t:] o.a.s.s.s.SolrSuggester init: {name=mySuggester, lookupImpl=AnalyzingInfixLookupFactory, dictionaryImpl=DocumentDictionaryFactory, field=tags, suggestAnalyzerFieldType=suggest_field}
+2025-04-11 18:50:54.476 INFO  (coreLoadExecutor-11-thread-1) [c: s: r: x:discursos t:] o.a.s.s.s.SolrSuggester Dictionary loaded with params: {name=mySuggester, lookupImpl=AnalyzingInfixLookupFactory, dictionaryImpl=DocumentDictionaryFactory, field=tags, suggestAnalyzerFieldType=suggest_field}
+2025-04-11 18:50:54.502 INFO  (coreLoadExecutor-11-thread-1) [c: s: r: x:discursos t:] o.a.s.h.c.SuggestComponent Registering searcher listener for suggester: mySuggester = SuggesterListener [core=org.apache.solr.core.SolrCore@6fdd59f3 discursos, suggester=SolrSuggester [ name=mySuggester, sourceLocation=null, storeDir=, lookupImpl=AnalyzingInfixLookupFactory, dictionaryImpl=DocumentDictionaryFactory, sizeInBytes=0 ], buildOnCommit=false, buildOnOptimize=false, buildOnStartup=true, isCoreReload=false]
+2025-04-11 18:50:54.518 INFO  (coreLoadExecutor-11-thread-1) [c: s: r: x:discursos t:] o.a.s.s.DirectSolrSpellChecker init: {name=default, field=_text_, classname=solr.DirectSolrSpellChecker, distanceMeasure=internal, maxEdits=2, minPrefix=1, maxInspections=5, minQueryLength=4, accuracy=0.5, maxQueryFrequency=0.01}
+2025-04-11 18:50:54.518 INFO  (coreLoadExecutor-11-thread-1) [c: s: r: x:discursos t:] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2025-04-11 18:50:54.518 INFO  (searcherExecutor-17-thread-1-processing-discursos) [c: s: r: x:discursos t:] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2025-04-11 18:50:54.518 INFO  (searcherExecutor-17-thread-1-processing-discursos) [c: s: r: x:discursos t:] o.a.s.h.c.SuggestComponent buildOnStartup: mySuggester
+2025-04-11 18:50:54.518 INFO  (searcherExecutor-17-thread-1-processing-discursos) [c: s: r: x:discursos t:] o.a.s.s.s.SolrSuggester SolrSuggester.build(mySuggester)
+2025-04-11 18:50:57.924 INFO  (searcherExecutor-17-thread-1-processing-discursos) [c: s: r: x:discursos t:] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2025-04-11 18:50:57.924 INFO  (searcherExecutor-17-thread-1-processing-discursos) [c: s: r: x:discursos t:] o.a.s.c.SolrCore Registered new searcher autowarm time: 0 ms
