@@ -79,7 +79,7 @@ RUN set -ex; \
     (cd /opt; ln -s solr-*/ solr); \
     rm -Rf /opt/solr/docs /opt/solr/docker/Dockerfile;
 
-#RUN ls -l /opt/solr/
+
 
 RUN set -ex; \
     mkdir -p /opt/solr/server/solr/lib /docker-entrypoint-initdb.d; \
@@ -97,10 +97,12 @@ RUN set -ex; \
     apt-get -y --no-install-recommends install acl lsof procps wget netcat gosu tini jattach; \
     rm -rf /var/lib/apt/lists/*;
 
+
+
 #VOLUME /var/solr
 EXPOSE 8983
 WORKDIR /opt/solr
-
+RUN ls -l /opt/solr/solr-9.6.1
 
 USER $SOLR_UID
 
