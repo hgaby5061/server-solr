@@ -102,7 +102,7 @@ RUN set -ex; \
 #VOLUME /var/solr
 EXPOSE 8983
 WORKDIR /opt/solr
-RUN ls -l /opt/solr/solr-9.6.1
+RUN ls -l /opt/solr/
 
 USER $SOLR_UID
 
