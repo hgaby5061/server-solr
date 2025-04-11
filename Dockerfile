@@ -41,8 +41,8 @@ FROM $BASE_IMAGE
 #COPY /bin /opt/
 #COPY /modules /opt/
 #COPY /scripts /opt/
-COPY ./ /opt/
-RUN ls -l /opt/
+COPY / /opt
+RUN ls -l /opt
 
 ARG SOLR_VERSION="9.6.1"
 
@@ -79,7 +79,7 @@ RUN set -ex; \
     (cd /opt; ln -s solr-*/ solr); \
     rm -Rf /opt/solr/docs /opt/solr/docker/Dockerfile;
 
-#RUN ls -l /opt/solr/
+
 
 RUN set -ex; \
     mkdir -p /opt/solr/server/solr/lib /docker-entrypoint-initdb.d; \
@@ -97,9 +97,14 @@ RUN set -ex; \
     apt-get -y --no-install-recommends install acl lsof procps wget netcat gosu tini jattach; \
     rm -rf /var/lib/apt/lists/*;
 
+
+
 #VOLUME /var/solr
 EXPOSE 8983
 WORKDIR /opt/solr
+RUN ls -l /opt/solr/
+RUN ls -l /opt/solr/scripts/
+
 USER $SOLR_UID
 
 ENTRYPOINT ["docker-entrypoint.sh"]
