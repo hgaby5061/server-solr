@@ -97,18 +97,12 @@ RUN set -ex; \
     apt-get -y --no-install-recommends install acl lsof procps wget netcat gosu tini jattach; \
     rm -rf /var/lib/apt/lists/*;
 
-
-
 #VOLUME /var/solr
 EXPOSE 8983
 WORKDIR /opt/solr
 RUN ls -l /opt/solr/
 RUN ls -l /opt/solr/docker/scripts
 
-USER root
-RUN find /var/solr -mindepth 1 -maxdepth 1 ! -name "lost+found" -exec chown -R "$SOLR_USER:$SOLR_GROUP" {} + && \
-    find /var/solr -mindepth 1 -maxdepth 1 ! -name "lost+found" -exec chmod -R 770 {} +
-  
 RUN chmod +x /opt/solr/docker/scripts/*
 #RUN chown -R "$SOLR_USER:$SOLR_GROUP" /var/solr && chmod -R 770 /var/solr
 USER solr
