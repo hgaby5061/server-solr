@@ -56,6 +56,8 @@ LABEL org.opencontainers.image.documentation="https://solr.apache.org/guide/"
 LABEL org.opencontainers.image.version="${SOLR_VERSION}"
 LABEL org.opencontainers.image.licenses="Apache-2.0"
 
+USER root
+
 ENV SOLR_USER="solr" \
     SOLR_UID="8983" \
     SOLR_GROUP="solr" \
@@ -103,7 +105,7 @@ WORKDIR /opt/solr
 RUN ls -l /opt/solr/
 RUN ls -l /opt/solr/docker/scripts
 
-USER root
+
 RUN chmod +x /opt/solr/docker/scripts/*
 #RUN chown -R "$SOLR_USER:$SOLR_GROUP" /var/solr && chmod -R 770 /var/solr
 USER "$SOLR_UID"
