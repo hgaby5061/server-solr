@@ -76,9 +76,9 @@ RUN chmod +x /opt/solr/bin/* /opt/solr/docker/scripts/* /opt/solr/server/*
 RUN ls -l /opt/solr/server/solr/discursos
 RUN ls -l /var/solr/
 
-#COPY /opt/solr/server/solr/Topics /var/solr/data
-COPY ./discursos/* /var/solr/data/discursos
-RUN chown -R solr:solr /var/solr/* && chmod -R 770 /var/solr/*
+COPY ./solr-9.6.1/server/solr/Topics/* /var/solr/data/Topics
+COPY ./solr-9.6.1/server/solr/discursos/* /var/solr/data/discursos
+#RUN chown -R solr:solr /var/solr/* && chmod -R 770 /var/solr/*
 
 USER $SOLR_UID
 
