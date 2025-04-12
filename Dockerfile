@@ -83,7 +83,7 @@ RUN ls -l /opt/solr/server/solr/discursos
 #COPY ./solr-9.6.1/server/solr/discursos/core.properties /var/solr/data/discursos
 #RUN chown -R solr:solr /var/solr/* && chmod -R 770 /var/solr/*
 COPY ./solr-9.6.1/server/solr/Topics/* /var/solr/data/Topics
-RUN ls -l /var/solr/data
+RUN ls -l /var/solr/data/Topics
 
 USER $SOLR_UID
 
