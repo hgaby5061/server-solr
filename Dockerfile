@@ -1,4 +1,4 @@
- # Licensed to the Apache Software Foundation (ASF) under one or more
+# Licensed to the Apache Software Foundation (ASF) under one or more
 # contributor license agreements.  See the NOTICE file distributed with
 # this work for additional information regarding copyright ownership.
 # The ASF licenses this file to You under the Apache License, Version 2.0
@@ -56,8 +56,6 @@ LABEL org.opencontainers.image.documentation="https://solr.apache.org/guide/"
 LABEL org.opencontainers.image.version="${SOLR_VERSION}"
 LABEL org.opencontainers.image.licenses="Apache-2.0"
 
-USER root
-
 ENV SOLR_USER="solr" \
     SOLR_UID="8983" \
     SOLR_GROUP="solr" \
@@ -81,7 +79,7 @@ RUN set -ex; \
     (cd /opt; ln -s solr-*/ solr); \
     rm -Rf /opt/solr/docs /opt/solr/docker/Dockerfile;
 
-USER "$SOLR_UID"
+
 
 RUN set -ex; \
     mkdir -p /opt/solr/server/solr/lib /docker-entrypoint-initdb.d; \
@@ -99,16 +97,15 @@ RUN set -ex; \
     apt-get -y --no-install-recommends install acl lsof procps wget netcat gosu tini jattach; \
     rm -rf /var/lib/apt/lists/*;
 
+
+
 #VOLUME /var/solr
 EXPOSE 8983
 WORKDIR /opt/solr
 RUN ls -l /opt/solr/
-RUN ls -l /opt/solr/docker/scripts
+RUN ls -l /opt/solr/scripts/
 
-
-RUN chmod +x /opt/solr/docker/scripts/* /opt/solr/bin/solr 
-RUN chown -R "$SOLR_USER:$SOLR_GROUP" /var/solr && chmod -R 770 /var/solr
-
+USER $SOLR_UID
 
 ENTRYPOINT ["docker-entrypoint.sh"]
 CMD ["solr-foreground"]
