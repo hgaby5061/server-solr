@@ -107,7 +107,7 @@ RUN ls -l /opt/solr/docker/scripts
 
 
 RUN chmod +x /opt/solr/docker/scripts/*
-RUN chown -R "$SOLR_USER:$SOLR_GROUP" /var/solr
+RUN chown -R "$SOLR_USER:$SOLR_GROUP" /var/solr && chmod -R 770 /var/solr
 USER $SOLR_UID
 
 ENTRYPOINT ["docker-entrypoint.sh"]
