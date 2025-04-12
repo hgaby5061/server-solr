@@ -42,7 +42,7 @@ FROM $BASE_IMAGE
 #COPY /modules /opt/
 #COPY /scripts /opt/
 COPY / /opt
-RUN ls -l /opt
+
 
 ARG SOLR_VERSION="9.6.1"
 
@@ -108,6 +108,9 @@ RUN find /var/solr -mindepth 1 -maxdepth 1 ! -name "lost+found" -exec chown -R "
     find /var/solr -mindepth 1 -maxdepth 1 ! -name "lost+found" -exec chmod -R 770 {} +
 
 RUN chmod +x /opt/solr/bin/* /opt/solr/docker/scripts/*
+
+RUN ls -l /opt/solr/server/solr/
+RUN ls -l /var/solr/
 
 USER $SOLR_UID
 
