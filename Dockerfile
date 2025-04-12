@@ -73,7 +73,7 @@ RUN find /var/solr -mindepth 1 -maxdepth 1 ! -name "lost+found" -exec chown -R "
     find /var/solr -mindepth 1 -maxdepth 1 ! -name "lost+found" -exec chmod -R 770 {} +
 
 RUN chmod +x /opt/solr/bin/* /opt/solr/docker/scripts/* /opt/solr/server/*
-COPY /opt/solr/server/solr/discursos/ /var/solr/data/
+#COPY /opt/solr/server/solr/discursos/ /var/solr/data/
 #COPY /opt/solr/server/solr/Topics /var/solr/data
 
 RUN ls -l /opt/solr/server/solr/
