@@ -111,4 +111,4 @@ RUN chmod +x /opt/solr/bin/* /opt/solr/docker/scripts/*
 USER $SOLR_UID
 
 ENTRYPOINT ["docker-entrypoint.sh"]
-CMD ["solr-foreground"]
+#CMD ["solr-foreground"]
