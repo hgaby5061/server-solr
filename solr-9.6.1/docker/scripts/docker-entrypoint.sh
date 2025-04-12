@@ -39,11 +39,17 @@ if [ "${1:0:1}" == '-' ]; then
     set -- solr-foreground "$@"
 fi
 
+#cambio pq no funciono sin cmd ni con gsu en exec
+# Si no se pasó ningún argumento, asignar solr-foreground por defecto
+if [ "$#" -eq 0 ]; then
+    set -- solr-foreground
+fi
+
 # execute command passed in as arguments.
 # The Dockerfile has specified the PATH to include
 # /opt/solr/bin (for Solr) and /opt/solr/docker (for docker-specific scripts
 # like solr-foreground, solr-create, solr-precreate, solr-demo).
 # Note: if you specify "solr", you'll typically want to add -f to run it in
 # the foreground.
-#exec gosu solr "$@"
-exec "$@"
+exec gosu solr "$@"
+#exec "$@"
