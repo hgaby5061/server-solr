@@ -45,4 +45,5 @@ fi
 # like solr-foreground, solr-create, solr-precreate, solr-demo).
 # Note: if you specify "solr", you'll typically want to add -f to run it in
 # the foreground.
-exec gosu solr "$@"
+#exec gosu solr "$@"
+exec "$@"
