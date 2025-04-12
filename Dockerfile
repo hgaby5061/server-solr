@@ -98,10 +98,15 @@ RUN set -ex; \
     rm -rf /var/lib/apt/lists/*;
 
 
-
 #VOLUME /var/solr
 EXPOSE 8983
 WORKDIR /opt/solr
+
+USER root
+RUN find /var/solr -mindepth 1 -maxdepth 1 ! -name "lost+found" -exec chown -R "$SOLR_USER:$SOLR_GROUP" {} + && \
+    find /var/solr -mindepth 1 -maxdepth 1 ! -name "lost+found" -exec chmod -R 770 {} +
+
+RUN chmod +x /opt/solr/bin/* /opt/solr/docker/scripts/*
 
 USER $SOLR_UID
 
