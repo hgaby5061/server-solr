@@ -39,11 +39,19 @@ if [ "${1:0:1}" == '-' ]; then
     set -- solr-foreground "$@"
 fi
 
-#cambio pq no funciono sin cmd ni con gsu en exec
+#error 1cambio pq no funciono sin cmd ni con gsu en exec
 # Si no se pasó ningún argumento, asignar solr-foreground por defecto
 if [ "$#" -eq 0 ]; then
     set -- solr-foreground
 fi
+
+#error 2 por error en que no puede escribir log
+# Asegurarse de que el directorio de logs exista y sea writable para solr
+if [ ! -d /var/solr/logs ]; then
+    mkdir -p /var/solr/logs
+fi
+chown solr:solr /var/solr/logs
+chmod 770 /var/solr/logs
 
 # execute command passed in as arguments.
 # The Dockerfile has specified the PATH to include
