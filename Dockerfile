@@ -76,7 +76,7 @@ RUN chmod +x /opt/solr/bin/* /opt/solr/docker/scripts/* /opt/solr/server/*
 #COPY /opt/solr/server/solr/discursos/ /var/solr/data/
 #COPY /opt/solr/server/solr/Topics /var/solr/data
 
-RUN ls -l /opt/solr/server/solr/
+RUN ls -l /opt/solr/server/solr/discursos
 RUN ls -l /var/solr/
 
 USER $SOLR_UID
