@@ -69,15 +69,14 @@ EXPOSE 8983
 WORKDIR /opt/solr
 
 USER root
-COPY /opt/solr/server/solr/discursos /var/solr/data/discursos
-RUN chown -R solr:solr /var/solr/data/* && chmod -R 770 /var/solr/data/*
-
 RUN find /var/solr -mindepth 1 -maxdepth 1 ! -name "lost+found" -exec chown -R "$SOLR_USER:$SOLR_GROUP" {} + && \
     find /var/solr -mindepth 1 -maxdepth 1 ! -name "lost+found" -exec chmod -R 770 {} +
 
 RUN chmod +x /opt/solr/bin/* /opt/solr/docker/scripts/* /opt/solr/server/*
 
 #COPY /opt/solr/server/solr/Topics /var/solr/data
+COPY ./discursos /var/solr/data/discursos
+#RUN chown -R solr:solr /var/solr/data/* && chmod -R 770 /var/solr/data/*
 
 RUN ls -l /opt/solr/server/solr/discursos
 RUN ls -l /var/solr/
