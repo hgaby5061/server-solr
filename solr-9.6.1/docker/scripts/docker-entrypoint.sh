@@ -47,11 +47,11 @@ fi
 
 #error 2 por error en que no puede escribir log
 # Asegurarse de que el directorio de logs exista y sea writable para solr
-if [ ! -d /var/solr/logs ]; then
+if [ ! -d /var/solr/ ]; then
     mkdir -p /var/solr/logs
 fi
-chown solr:solr /var/solr/logs
-chmod 770 /var/solr/logs
+chown solr:solr /var/solr/*
+chmod 770 /var/solr/*
 
 # execute command passed in as arguments.
 # The Dockerfile has specified the PATH to include
