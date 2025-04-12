@@ -68,7 +68,7 @@ ENV SOLR_USER="solr" \
     LOG4J_PROPS=/var/solr/log4j2.xml \
     SOLR_JETTY_HOST="0.0.0.0" \
     SOLR_ZK_EMBEDDED_HOST="0.0.0.0"\
-    SOLR_JAVA_MEM="-XX:+UseSerialGC -Xms128m -Xmx450m"
+    SOLR_JAVA_MEM="-XX:+UseSerialGC -Xms128m -Xmx128m"
 
 RUN set -ex; \
     groupadd -r --gid "$SOLR_GID" "$SOLR_GROUP"; \
