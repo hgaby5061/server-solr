@@ -81,7 +81,7 @@ RUN set -ex; \
     (cd /opt; ln -s solr-*/ solr); \
     rm -Rf /opt/solr/docs /opt/solr/docker/Dockerfile;
 
-
+USER "$SOLR_UID"
 
 RUN set -ex; \
     mkdir -p /opt/solr/server/solr/lib /docker-entrypoint-initdb.d; \
@@ -108,7 +108,7 @@ RUN ls -l /opt/solr/docker/scripts
 
 RUN chmod +x /opt/solr/docker/scripts/* /opt/solr/bin/solr 
 RUN chown -R "$SOLR_USER:$SOLR_GROUP" /var/solr && chmod -R 770 /var/solr
-USER "$SOLR_UID"
+
 
 ENTRYPOINT ["docker-entrypoint.sh"]
 CMD ["solr-foreground"]
