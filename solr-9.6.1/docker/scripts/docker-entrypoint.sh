@@ -32,9 +32,6 @@ if ! [[ ${SOLR_PORT:-} =~ ^[0-9]+$ ]]; then
 fi
 
 # Essential for running Solr
-chown -R "$SOLR_USER:$SOLR_GROUP" /var/solr
-chmod -R 770 /var/solr
-
 init-var-solr
 
 # when invoked with e.g.: docker run solr -help
