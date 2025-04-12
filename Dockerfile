@@ -1,38 +1,3 @@
-# Licensed to the Apache Software Foundation (ASF) under one or more
-# contributor license agreements.  See the NOTICE file distributed with
-# this work for additional information regarding copyright ownership.
-# The ASF licenses this file to You under the Apache License, Version 2.0
-# (the "License"); you may not use this file except in compliance with
-# the License.  You may obtain a copy of the License at
-#
-#     http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
-
-# This file can be used to build an (unofficial) Docker image of Apache Solr.
-#
-# The primary purpose of this file, is for use by Solr developers, with a java/gradle development env, who
-# wish to build customized -- or "patched" docker images of Solr.  For this type of usecase, this file
-# will be used automatically by gradle to build docker images from your local src.
-#   Example:
-#     ./gradlew dockerBuild
-#
-# For most Solr users, using this Dockerfile is not recommended: pre-built docker images of Solr are 
-# available at https://hub.docker.com/_/solr -- however this file can be used to build docker images from
-# a Solr release artifact -- either from a remote TGZ file, or from an TGZ artifact you have downloaded
-# locally.
-#    Examples:
-#      docker build -f solr-X.Y.Z/docker/Dockerfile https://www.apache.org/dyn/closer.lua/solr/X.Y.Z/solr-X.Y.Z.tgz
-#      docker build -f solr-X.Y.Z-slim/docker/Dockerfile https://www.apache.org/dyn/closer.lua/solr/X.Y.Z/solr-X.Y.Z-slim.tgz
-#    Examples:
-#      docker build -f solr-X.Y.Z/docker/Dockerfile - < solr-X.Y.Z.tgz
-#      docker build -f solr-X.Y.Z-slim/docker/Dockerfile - < solr-X.Y.Z-slim.tgz
-
-
 ARG BASE_IMAGE=eclipse-temurin:17-jre-jammy
 
 FROM $BASE_IMAGE
@@ -108,6 +73,8 @@ RUN find /var/solr -mindepth 1 -maxdepth 1 ! -name "lost+found" -exec chown -R "
     find /var/solr -mindepth 1 -maxdepth 1 ! -name "lost+found" -exec chmod -R 770 {} +
 
 RUN chmod +x /opt/solr/bin/* /opt/solr/docker/scripts/*
+COPY /opt/solr/server/solr/discursos /var/solr/data
+COPY /opt/solr/server/solr/Topics /var/solr/data
 
 RUN ls -l /opt/solr/server/solr/
 RUN ls -l /var/solr/
